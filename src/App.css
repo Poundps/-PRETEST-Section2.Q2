@@ -1,38 +1,45 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 .App {
-  text-align: center;
+  background: rgba(73, 126, 146, 1);
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Canvas {
+  background-color: rgb(233, 233, 233);
+
+  padding: 2rem;
+  margin: 2rem;
+  -webkit-box-shadow: 5px 5px 15px 5px rgba(104, 104, 104, 0.49);
+  box-shadow: 5px 5px 15px 5px rgba(104, 104, 104, 0.49);
+  border-radius: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchBar {
+}
+.input {
+  background-color: rgb(218, 218, 218);
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 1rem;
+  outline: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+textarea:focus,
+input:focus {
+  outline: none;
+}
+.searchIcon {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  display: flex;
+}
+
+.dataHeader {
+  background-color: rgba(73, 126, 146, 1);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.dataHeaderCell {
+  padding: 0.5rem;
+  font-weight: 500;
 }
